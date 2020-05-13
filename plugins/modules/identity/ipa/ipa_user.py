@@ -330,7 +330,7 @@ def main():
     argument_spec.update(displayname=dict(type='str'),
                          givenname=dict(type='str'),
                          update_password=dict(type='str', default="always",
-                                              choices=['always', 'on_create']),
+                                              choices=['always', 'on_create'], no_log=False),
                          krbpasswordexpiration=dict(type='str'),
                          loginshell=dict(type='str'),
                          mail=dict(type='list', elements='str'),
